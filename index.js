@@ -58,7 +58,7 @@ async function updateMtaStatus() {
     try {
         console.log('Consultando estado de MTA...');
         const state = await Gamedig.query({
-            type: 'query', // Tipo de juego para Gamedig
+            type: 'mtasa', // Tipo de juego para Gamedig
             host: MTA_IP,
             port: MTA_PORT, // Puerto de consulta (query port)
             timeout: 5000 // Tiempo máximo de espera
